@@ -1,2 +1,2 @@
 # General
-This is for bacterial transcriptomes
+This is for bacterial transcriptomes.
