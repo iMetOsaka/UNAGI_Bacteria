@@ -1,0 +1,11 @@
+#!/bin/bash
+pushd . > /dev/null
+DIRPATH="${BASH_SOURCE[0]}";
+if ([ -h "${DIRPATH}" ]) then
+  while([ -h "${DIRPATH}" ]) do cd `dirname "$DIRPATH"`; DIRPATH=`readlink "${DIRPATH}"`; done
+fi
+cd `dirname ${DIRPATH}` > /dev/null
+DIRPATH=`pwd`;
+popd  > /dev/null
+#DIRPATH=$(dirname $(readlink -f $0))
+python3 $DIRPATH/app/unagi.py $*

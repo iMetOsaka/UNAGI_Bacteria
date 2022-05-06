@@ -1,0 +1,3 @@
+tools/*
+/app/__pycache__/*
+/tests/*
