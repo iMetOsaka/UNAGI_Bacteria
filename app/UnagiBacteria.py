@@ -417,7 +417,7 @@ def indentifyTTS(intersectFile, outputFile):
 				current = []
 		if len(current) > 0:
 			current.sort()
-			for site in clustering(current):
+			for site in clustering(current,threshold):
 				new.write('%s\t%i\t%i\n' % (prev_gene, site[0], site[1]))
 def identifyOperons(intersectFile,outputFile):
 	global config
