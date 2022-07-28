@@ -82,16 +82,16 @@ def main(argv):
 	trIntesectFile,rawBedTrFile,rawBedTrFilesorted,FinalTranscriptsFile=os.path.join(transitionnalOutputPath,config["transcripts_intersect_file"]),os.path.join(transitionnalOutputPath,config["trasncripts_bed_file"]),os.path.join(transitionnalOutputPath,config["trasncripts_sortred_bed_file"]),os.path.join(outputPath,config["Final_trasncripts_file"])
 	#Map the reads to the genome
 	log.tell("Mapping the reads to the genome")
-	#minimap(inputFile, genomeFile,samFile )
+	minimap(inputFile, genomeFile,samFile )
 
 	#Get a bam file from the results and sort it
 	log.tell("Sorting the mapped reads")
-	#samToBam(samFile,bamFile,chrFile)
-	#sortBam(bamFile,bamsortedFile)
+	samToBam(samFile,bamFile,chrFile)
+	sortBam(bamFile,bamsortedFile)
 	
 	#converting to bedfile
 	log.tell("Converting to bed file")
-	#bamToBed(bamsortedFile,bedFile)
+	bamToBed(bamsortedFile,bedFile)
 
 	#Identifying TSSs in an awar approach
 	log.tell("Identigying TSSs")
