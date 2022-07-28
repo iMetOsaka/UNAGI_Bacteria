@@ -71,7 +71,7 @@ def main(argv):
 	bedFile = os.path.join(transitionnalOutputPath,config["raw_sorted_bed_file"])
 	awarFile = os.path.join(transitionnalOutputPath,config["awar_tss_file"])
 	intermediateFile,unawarFile = os.path.join(transitionnalOutputPath,config["clustering_TTS_raw"]),os.path.join(transitionnalOutputPath,config["unawar_tss_file"])
-	rawTssFile,finalTssFile = os.path.join(transitionnalOutputPath,config["raw_list_TSSs_file"]),os.path.join(transitionnalOutputPath,config["final_list_TSSs_file"])
+	rawTssFile,finalTssFile = os.path.join(transitionnalOutputPath,config["raw_list_TSSs_file"]),os.path.join(outputPath,config["final_list_TSSs_file"])
 	poscovFile,negcovFile = os.path.join(transitionnalOutputPath,config["positive_coverage_file"]),os.path.join(transitionnalOutputPath,config["negative_coverage_file"])
 	posbedFile,negbedFile = os.path.join(transitionnalOutputPath,config["positive_bed_file"]),os.path.join(transitionnalOutputPath,config["negative_bed_file"])
 	geneBedFile,intersectFile=os.path.join(transitionnalOutputPath,config["genes_bed_file"]),os.path.join(transitionnalOutputPath,config["intersect_file"])
