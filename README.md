@@ -8,3 +8,4 @@ Operons: first gene-last gene(or operon name), all genes in the operon, number o
 
 Final transcripts: 
 Chromosome, start site, end site, name, strand, count, type, overlapping genes (from reference annotation)
+![image](https://github.com/user-attachments/assets/dd0ad70e-19b1-4313-ae82-093d075662d0)
